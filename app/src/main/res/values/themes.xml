@@ -1,0 +1,35 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Base.Theme.AsmaulHusna" parent="Theme.Material3.DayNight.NoActionBar">
+        <!-- Customize your light theme here. -->
+        <!-- <item name="colorPrimary">@color/my_light_primary</item> -->
+
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="colorSecondary">@color/colorPrimary</item>
+        <item name="colorSecondaryContainer">@color/colorSecondaryContainer</item>
+        <item name="colorTertiary">@color/colorAccent</item>
+        <item name="android:navigationBarColor">@color/card_bg_color</item>
+
+
+
+    </style>
+
+    <style name="Theme.AsmaulHusna" parent="Base.Theme.AsmaulHusna" />
+
+    <style name="BottomSheetStyle" parent="Theme.Design.Light.BottomSheetDialog">
+        <item name="bottomSheetStyle">@style/Model</item>
+    </style>
+
+    <style name="Model" parent="Widget.Design.BottomSheet.Modal">
+
+        <item name="android:background">@drawable/bottom_sheet_dialog_background</item>
+
+    </style>
+
+
+    <style name="textAppearanceLarge" parent="TextAppearance.AppCompat.Large">
+        <item name="fontFamily">@font/uthmanic_qunbul_v20</item>
+    </style>
+</resources>

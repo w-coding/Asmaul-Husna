@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="colorPrimary">#446063</color>
+    <color name="colorPrimaryDark">#CCD4DD</color>
+    <color name="colorAccent">#CCD4DD</color>
+    <color name="colorSecondaryContainer">#587C80</color>
+    <color name="SplashScreenColor">#F5F0EA</color>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="text_color">#446063</color>
+    <color name="second_text_color">#CCD4DD</color>
+    <color name="second_text_color_blue">#60A8FB</color>
+    <color name="view_color">#FF000000</color>
+    <color name="button_color">#446063</color>
+    <color name="bg_color">#CCD4DD</color>
+    <color name="shadow_recycler_view_color">#7E9AB6</color>
+    <color name="bg_recycler_view_color">#CCD4DD</color>
+    <color name="card_bg_color">#446063</color>
+    <color name="colorGold">#446063</color>
+</resources>

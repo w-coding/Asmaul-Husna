@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.motion.widget.MotionLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layoutDescription="@xml/activity_spalsh_screen_scene"
+    tools:context=".SplashScreen"
+    android:background="@color/bg_color">
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraintLayoutBackground"
+        android:layout_width="500dp"
+        android:layout_height="500dp"
+        android:background="@drawable/splash_background"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/allah_color"
+        android:layout_width="400dp"
+        android:layout_height="400dp"
+        android:src="@drawable/allah_color"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:tint="#446063"
+        tools:ignore="ContentDescription" />
+
+    <ImageView
+        android:id="@+id/allah_white"
+        android:layout_width="400dp"
+        android:layout_height="400dp"
+        android:src="@drawable/allah_color"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:tint="@color/white"
+        tools:ignore="ContentDescription"/>
+</androidx.constraintlayout.motion.widget.MotionLayout>

@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".MainActivity"
+    android:background="@color/bg_color"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical">
+
+
+
+   <LinearLayout
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:orientation="vertical">
+       <LinearLayout
+           android:layout_width="match_parent"
+           android:background="@color/bg_color"
+           android:layout_height="wrap_content"
+           android:layout_margin="10dp"
+           android:orientation="horizontal"
+           tools:ignore="UselessParent">
+           <TextView
+               android:id="@+id/txtHijrahDate"
+               android:layout_width="0dp"
+               android:layout_height="wrap_content"
+               android:layout_weight="1"
+               android:layout_margin="10dp"
+               android:textAlignment="textStart"
+               android:textColor="@color/text_color"
+               android:fontFamily="@font/rabar015"
+               android:textStyle="bold"
+               android:text="Home"
+               android:textSize="20sp"
+               tools:ignore="HardcodedText"
+               android:typeface="normal" />
+
+           <Switch
+               android:id="@+id/changeMode"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:gravity="center"
+               android:layout_margin="10dp"
+               android:layout_gravity="center"
+               android:layout_marginStart="10dp"
+               android:thumb="@drawable/thumb"
+               android:track="@drawable/track"
+               tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck,UseSwitchCompatOrMaterialXml" />
+
+
+           <EditText
+               android:visibility="gone"
+               android:id="@+id/searchEditText"
+               android:layout_width="match_parent"
+               android:layout_height="48dp"
+               android:layout_gravity="center"
+               android:hint="search"
+               android:textSize="18sp"
+               android:inputType="text"
+               android:textAlignment="center"
+               android:textColor="@color/text_color"
+               android:textColorHint="@color/second_text_color"
+               android:fontFamily="@font/rabar014"
+               android:elevation="5dp"
+               android:drawableEnd="@drawable/ic_search"
+               android:drawableTint="@color/second_text_color"
+               android:drawablePadding="10dp"
+               android:background="@drawable/search_background"
+               android:layout_marginTop="10dp"
+               android:layout_marginBottom="10dp"
+               android:layout_marginStart="20dp"
+               android:layout_marginEnd="20dp"
+               tools:ignore="HardcodedText,VisualLintTextFieldSize"
+               android:autofillHints="" />
+       </LinearLayout>
+
+       <androidx.recyclerview.widget.RecyclerView
+           android:id="@+id/namesRecyclerView"
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:paddingTop="15dp"
+           android:paddingStart="15dp"
+           android:paddingEnd="15dp"
+           android:elevation="10dp"
+           android:outlineAmbientShadowColor="@color/shadow_recycler_view_color"
+           android:outlineSpotShadowColor="@color/shadow_recycler_view_color"
+           android:background="@drawable/recycler_view_background"
+           app:layout_behavior="@string/appbar_scrolling_view_behavior"
+           tools:targetApi="p" />
+
+   </LinearLayout>
+
+        <com.google.android.material.bottomappbar.BottomAppBar
+            android:id="@+id/bottomappbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:backgroundTint="@color/card_bg_color"
+            app:fabCradleRoundedCornerRadius="10dp"
+            app:fabCradleMargin="11dp"
+            app:fabAlignmentMode="end"
+            app:hideOnScroll="true"
+            >
+            <com.google.android.material.bottomnavigation.BottomNavigationView
+                android:id="@+id/bottomNavigationView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:labelVisibilityMode="labeled"
+                android:background="@drawable/transparent_backgroun"
+                app:itemIconTint="@color/second_text_color"
+                app:itemTextColor="@color/second_text_color"
+                app:menu="@menu/menu_item"
+                />
+        </com.google.android.material.bottomappbar.BottomAppBar>
+
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/floatingActionButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/qibla"
+        app:maxImageSize="34dp"
+        app:layout_anchor="@id/bottomappbar"
+        app:tint="@color/second_text_color"
+        android:backgroundTint="@color/card_bg_color"
+        app:rippleColor="@color/second_text_color"
+        tools:ignore="ContentDescription,SpeakableTextPresentCheck" />
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>
